@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74dcaeed-ee50-427d-b9ed-fb1bb3ed7340" name="Changes" comment="" />
+    <list default="true" id="74dcaeed-ee50-427d-b9ed-fb1bb3ed7340" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/wp-my-product-webspark/templates/myaccount/my-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/wp-my-product-webspark/templates/myaccount/my-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/wp-my-product-webspark/wp-my-product-webspark.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/wp-my-product-webspark/wp-my-product-webspark.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739026891176</updated>
-      <workItem from="1739026892558" duration="30149000" />
+      <workItem from="1739026892558" duration="31076000" />
     </task>
     <servers />
   </component>

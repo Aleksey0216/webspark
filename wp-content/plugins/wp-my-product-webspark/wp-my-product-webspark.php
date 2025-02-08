@@ -31,6 +31,14 @@ add_action( 'woocommerce_account_my-products_endpoint', function () {
 	include plugin_dir_path( __FILE__ ) . 'templates/myaccount/my-products.php';
 } );
 
+function custom_rewrite_rules() {
+	add_rewrite_rule(
+		'^my-account/my-products/page/([0-9]+)/?$',
+		'index.php?pagename=my-account/my-products&paged=$matches[1]',
+		'top'
+	);
+}
+add_action('init', 'custom_rewrite_rules');
 
 
 

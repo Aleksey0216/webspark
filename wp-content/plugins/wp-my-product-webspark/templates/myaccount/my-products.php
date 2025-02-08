@@ -3,13 +3,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$current_page = get_query_var( 'paged' );
+
+var_dump($current_page);
+
 $current_user = wp_get_current_user();
 $args         = [
-	'post_type'     => 'product',
-	'post_status'   => [ 'pending', 'publish' ],
-	'author'        => get_current_user_id(),
-	'post_per_page' => 5,
-	'paged'         => 1,
+	'post_type'   => 'product',
+	'post_status' => [ 'pending', 'publish' ],
+	'author'      => get_current_user_id(),
+    'post_per_page' => 5,
+    'paged'       => $current_page,
 ];
 
 $products = get_posts( $args );
