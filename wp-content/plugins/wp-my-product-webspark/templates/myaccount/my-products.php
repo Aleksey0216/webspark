@@ -3,13 +3,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$current_page = get_query_var( 'paged' );
-
 $current_user = wp_get_current_user();
 $args         = [
-	'post_type'   => 'product',
-	'post_status' => [ 'pending', 'publish' ],
-	'author'      => get_current_user_id(),
+	'post_type'     => 'product',
+	'post_status'   => [ 'pending', 'publish' ],
+	'author'        => get_current_user_id(),
+	'post_per_page' => 5,
+	'paged'         => 1,
 ];
 
 $products = get_posts( $args );
@@ -54,22 +54,3 @@ $products = get_posts( $args );
 <?php else : ?>
     <p>Немає товарів.</p>
 <?php endif; ?>
-
-<?php
-
-$product_per_page = new WP_Query( array(
-	'post_per_page' => 5,
-	'paged'         => $current_page
-) );
-
-if ( $product_per_page->have_posts() ):
-	while ( $product_per_page->have_posts() ):
-		$product_per_page->the_post();
-		$products->get_posts();
-	endwhile;
-
-echo paginate_links( array(
-    'total' => $product_per_page->max_num_pages
-) );
-
-endif;
