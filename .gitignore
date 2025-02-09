@@ -4,5 +4,5 @@
 !README.md
 
 # Не игнорировать папку плагина и её содержимое
-!/wp-content/plugins/wp-my-product-webspark/
-!/wp-content/plugins/wp-my-product-webspark/**
+!wp-content/plugins/wp-my-product-webspark/*
+!wp-content/plugins/wp-my-product-webspark/**
